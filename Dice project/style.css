@@ -1,0 +1,44 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+#dice-roll {
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 0.5s ease;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  background-color: green;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  top: 60%;
+}
+
+button:hover {
+  background-color: rgba(0, 128, 0, 0.674);
+}

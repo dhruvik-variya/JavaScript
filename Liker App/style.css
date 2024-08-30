@@ -1,0 +1,96 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #6A9C89;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+  }
+  
+  .post-card {
+    padding: 20px;
+    width: 400px;
+    background-color: #C1D8C3;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 50px 70px #A6B37D;
+  }
+  
+  .post-header {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .post-header img {
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+    border: 2px solid #3C3D37;
+    padding: 2px;
+  }
+  
+  .post-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #3C3D37;
+  }
+  
+  .post-img {
+    width: 100%;
+    height: 300px;
+    background-image: url('./img/babyBoss.jpeg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    border-bottom: 1px solid #eaeaea;
+  }
+  
+  .post-icons {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 15px 20px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: #f7f7f7;
+    border-top: 1px solid #eaeaea;
+  }
+  
+  .post-icons .action-group {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .post-icons .action-group i {
+    font-size: 22px;
+    margin-right: 8px;
+  }
+
+ 
+  
+  .post-icons .action-group:hover {
+    color: #3c3d37c0;
+  }
+  
+  .post-icons span {
+    font-size: 16px;
+  }
+  

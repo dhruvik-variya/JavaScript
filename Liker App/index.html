@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liker App</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="post-card">
+      <div class="post-header">
+        <img src="./img/babyBoss.jpeg" alt="Profile Picture" />
+        <h3>Keyur Patel</h3>
+      </div>
+
+      <div class="post-img"></div>
+
+      <div class="post-icons">
+        <div class="action-group">
+          <i class="fa-regular fa-heart redlike" id="like"></i><div id="Likediv">0</div>
+        </div>
+        <div class="action-group">
+          <i class="fa-regular fa-comment" id="comment"></i><div id="Commentdiv">0</div>
+        </div>
+        <div class="action-group">
+          <i class="fa-regular fa-paper-plane" id="share"></i><div id="Sharediv">0</div>
+        </div>
+        <div class="action-group">
+          <i class="fa-regular fa-bookmark" id="save"></i><div id="Savediv">0</div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./script.js"></script>
+</html>

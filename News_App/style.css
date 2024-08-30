@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color:#F1F8E8;
+    color:#55AD9B;
+  }
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color:#BDE8CA;
+    color:#55AD9B;
+    padding-top: 20px;
+  }
+
+  .sidebar h4{
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: large;
+    font-weight: bold;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    &:hover{
+      background-color:#2fff00;
+    }        
+  }
+
+  
+  .main-content {
+    margin-left: 260px;
+    padding: 20px;
+  }
+
+  
+
+  .header{
+    border-bottom:2px solid black;
+    padding-bottom: 15px;
+    color:#BDE8CA;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: larger;
+    margin-bottom: 20px;
+
+     .sidebarIMG{
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+  }
+}
+  #profile-image{
+    display:flex;  
+    border: 2px solid #55AD9B;
+    border-radius: 50%; 
+    position: relative;
+    left: 15%;
+    top: 7%; 
+  }
+
+  #profile-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 70px;
+    font-style: italic;
+    font-weight: 600;
+  }
+
+  .nav{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px; 
+    padding-top: 20px;
+    text-decoration: none !important;   
+  }
+  .navigation-link a{
+    color: #55AD9B;
+    text-decoration: none !important;
+    text-decoration: underline;
+    font-size: 20px;
+  }
+
+  .navigation-link a:hover{
+    color:#2fff00;
+  }
+
+
+
+/* add news */
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1em;
+    background: #BDE8CA;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  label {
+    margin-top: 1em;
+    display: block;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input[type="submit"] {
+    width: auto;
+    background: #55ad9b;
+    color: white;
+    border: none;
+    padding: 0.75em 1.5em;
+    margin-top: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background: #55ad9b;
+  }
+
+ 

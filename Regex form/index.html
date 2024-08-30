@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User data</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .valid {
+      border: 3px Solid green !important;
+    }
+
+    .invalid {
+      border: 3px Solid Red !important;
+      background-color: #ffffff !important;
+    }
+  </style>
+</head>
+
+<body>
+  <form id="userdata">
+    <div class="wrapper">
+      <div class="title">User Data</div>
+      <div class="form">
+        <div class="inputfield">
+          <label>Name</label>
+          <input type="text" class="input" id="name" />
+        </div>
+        <div class="inputfield">
+          <label>E-mail</label>
+          <input type="text" class="input" id="email" />
+        </div>
+
+        <div class="inputfield">
+          <label>Password</label>
+          <input type="text" class="input" id="password" />
+        </div>
+
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="gender">
+            <div>
+              <input type="radio" name="gender" value="male" class="male" />
+              Male
+            </div>
+            <div>
+              <input type="radio" name="gender" value="female" class="female" />
+              Female
+            </div>
+          </div>
+        </div>
+
+        <div class="inputfield">
+          <label>Phone Number</label>
+          <input type="text" class="input" id="number" />
+        </div>
+
+        <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+        </div>
+        <div class="inputfield">
+          <input type="submit" value="Register" class="btn" id="submit" />
+        </div>
+      </div>
+    </div>
+  </form>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

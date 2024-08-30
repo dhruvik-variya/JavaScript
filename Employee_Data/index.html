@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Data</title>
+    <!-- BT CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- BT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <form id="userData" class="container">
+
+      <h2>Employee Data</h2><br>
+
+        <label for="text">Employee Name :</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter name"><br>
+
+        <label for="text">Employee email :</label>
+        <input type="text" class="form-control" id="email" placeholder="Enter e-mail"><br>
+
+        <label for="text">Employee  role :</label>
+        <input type="text" class="form-control" id="role" placeholder="Enter role"><br>
+
+        <label for="text">Employee Expirience :</label>
+        <input type="number" class="form-control" id="Expirience"  placeholder="Enter Expirience"><br><br>
+        
+        <label for="text">Employee salary :</label>
+        <input type="number" class="form-control" id="salary"  placeholder="Enter salary"><br><br><br>
+        
+        <input  type="submit" class="btn btn-success">
+
+        
+    </form>
+
+    <table class="table table-dark table-striped table-hover w-75 mx-auto mt-5">
+        <thead>
+          <tr>
+            <th scope="col">Sr.No</th>
+            <th scope="col">Employee Name</th>
+            <th scope="col">E-mail</th>
+            <th scope="col">Job Role</th>
+            <th scope="col">Expirience</th>
+            <th scope="col">Level</th>
+            <th scope="col">Salary</th>
+            <th scope="col" id="DeleteAll">Delete All</th>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+           
+        </tbody>
+      </table>
+
+      <h2 id="totalsalary"></h2>
+      <h2 id="totalemp"></h2>
+
+    <script src="./script.js"></script>
+</body>
+</html>
