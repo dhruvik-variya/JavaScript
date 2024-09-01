@@ -1,8 +1,11 @@
+import Navbar from "../Component/navbar.js";
+
+document.getElementById("navbar").innerHTML = Navbar();
+
+
 let user = JSON.parse(localStorage.getItem("user")) || [];
 
-document.querySelector("signup-form").addEventListener("submit", handledata);
-
-function handledata(e) {
+const  handledata = (e) => {
 
     e.preventDefault();
 
@@ -13,9 +16,10 @@ function handledata(e) {
     }
 
     user.push(data);
-    localStorage.setItem("user", JSON.stringify(user));
-    alert("User registered successfully!");
-    
-     
-    window.location.href = "../Pages/login.html";
+    localStorage.setItem('user', JSON.stringify(user));
+    alert("User SignUp successfully!");
+
+    window.location.href = "./login.html";
+      
 }
+document.querySelector("#form").addEventListener("submit", handledata);

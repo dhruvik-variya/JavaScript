@@ -5,10 +5,7 @@ body {
 
 .container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 10px;
-
 }
 
 .navbar {
@@ -25,7 +22,6 @@ body {
     display: flex;
     justify-content: space-around;
     text-decoration: none;
-
     margin: 10px 30px;
     cursor: pointer;
 }
@@ -71,3 +67,4 @@ body {
 .logo a {
     text-decoration: none;
 }
+
