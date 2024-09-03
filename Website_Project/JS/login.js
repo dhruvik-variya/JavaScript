@@ -18,10 +18,10 @@ const  handledata = (e) =>  {
         (ele) => ele.email == user.email && ele.password == user.password
     );
     
-    if(match.length >0){
+    if(match){
         alert("User Login successfully!");
 
-        localStorage.setItem("username",match[0].username);
+        localStorage.setItem("username", match.name);
 
         localStorage.setItem("login", true)
 
