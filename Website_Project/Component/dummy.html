@@ -1,10 +1,13 @@
-const Navbar = () => {
-
-    let login=localStorage.getItem('login');
-    let username=localStorage.getItem('username');
-
-    return `
-        <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="container">
         <nav class="navbar">
             <div class="logo">
                 <a href="../index.html">Navbar</a> 
@@ -16,14 +19,10 @@ const Navbar = () => {
                     <li class="menu-items"><a href="../Pages/addproduct.html">Add Product</a></li>
                     <li class="menu-items"><a href="../Pages/cart.html">Cart</a></li>
                     <li class="menu-items"><a href="../Pages/login.html"> ${login ? "Logout" : "Login"} </a></li>
-                    <li class="menu-items"><a href="../Pages/signup.html"> ${login ? username : "SignUp"}</a></li>
+                    <li class="menu-items"><a href="../Pages/signup.html"> ${login ? username : "signup"} </a></li>
                 </ul>
             </div>
         </nav>
     </div>
-    
-    `
-
-}
-
-export default Navbar;
+</body>
+</html>

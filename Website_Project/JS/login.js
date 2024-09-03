@@ -18,13 +18,17 @@ const  handledata = (e) =>  {
         (ele) => ele.email == user.email && ele.password == user.password
     );
     
-    if(match){
+    if(match.length >0){
         alert("User Login successfully!");
+
+        localStorage.setItem("username",match[0].username);
+
+        localStorage.setItem("login", true)
+
         window.location.href = "/index.html";
     }
     else{
-        alert('Invalid Email or Password')
-        return;
+        alert('Invalid Email or Password');
     }    
 } 
 
