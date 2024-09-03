@@ -1,0 +1,84 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+}
+
+.counter-box {
+    display: flex;
+    gap: 20px;
+}
+
+.counter {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px #FFDC7F ;
+    width: 120px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.counter i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.counter h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #fff;
+}
+
+.counter p {
+    margin: 0;
+    font-size: 16px;
+    color: #fff;
+}
+
+.counter:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Specific Colors for Each Counter */
+.counter:nth-child(1) {
+    background-color: #f09433; /* Instagram Gradient Color */
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: #ffffff;
+}
+
+.counter:nth-child(1) i {
+    color: #ffffff;
+}
+
+.counter:nth-child(2) {
+    background-color: #3b5998; /* Facebook Blue */
+    color: #ffffff;
+}
+
+.counter:nth-child(2) i {
+    color: #ffffff;
+}
+
+.counter:nth-child(3) {
+    background-color: #0077b5; /* LinkedIn Blue */
+    color: #ffffff;
+}
+
+.counter:nth-child(3) i {
+    color: #ffffff;
+}
+
+.counter:nth-child(4) {
+    background-color: #1da1f2; /* Twitter Blue */
+    color: #ffffff;
+}
+
+.counter:nth-child(4) i {
+    color: #ffffff;
+}

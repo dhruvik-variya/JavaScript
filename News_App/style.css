@@ -132,3 +132,45 @@ form {
   }
 
  
+/* Grid layout for news items */
+.news-grid {
+  display: grid; 
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 30px;
+  padding: 10px;
+  
+}
+
+.newsItem {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.newsItem img {
+  width: 100%;
+  height:300px;
+  border-radius: 8px;
+}
+
+.newsItem h3 {
+  font-size: 1.2em;
+}
+
+.newsItem p {
+  font-size: 1em;
+}
+
+.newsItem button {
+  background-color: #d9534f;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.newsItem button:hover {
+  background-color: #c9302c;
+}
