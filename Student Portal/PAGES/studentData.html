@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Data</title>
+    <link rel="stylesheet" href="../CSS/student.css" />
+    
+    <!-- fa-cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <nav id="Navbar"></nav>
+
+    <div class="search-controls">
+      <input type="text" id="search" placeholder="Search..." />
+      <button type="button" id="searchBtn"> 
+        <i class="fas fa-search"></i>
+      </button>
+      <select id="sort">
+        <option selected disabled>Sort By</option>
+        <option value="lth">Low to High</option>
+        <option value="htl">High to Low</option>
+      </select>
+      <select id="filter">
+        <option selected disabled>Filter By</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Cyber Security">Cyber Security</option>
+        <option value="Front-End">Front-End</option>
+        <option value="Back-End">Back-End</option>
+        <option value="Full-Stack">Full-Stack</option>
+      </select>
+    </div>
+
+     <div id="studentList"></div>
+
+    
+  </body>
+  <script type="module" src="../JS/studentData.js"></script>
+</html>

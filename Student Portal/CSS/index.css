@@ -1,0 +1,80 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F7EFE5;
+}
+
+/* Form styles */
+#form {
+  width: 30%;
+  max-width: 600px;  
+  margin: 30px auto;
+  padding: 30px 20px;
+  background-color: #F7EFE5;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+/* Label styles */
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+/* Input styles */
+input[type="text"],
+input[type="number"],
+input[type="url"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Select styles */
+select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  appearance: none; /* Remove default arrow */
+}
+
+/* Button styles */
+input[type="submit"] {
+  background-color: #4CAF50; /* Green */
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+/* Navbar styles (optional) */
+.navbar {
+  background-color: #3B3030;
+  width: 80%;
+  display: flex;
+  gap: 30%;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 20px;
+  margin: 30px auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+}
+
+.navbar a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 20px;
+}
