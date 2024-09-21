@@ -25,10 +25,10 @@ const Uimaker = () => {
         let image = document.createElement("img");
         image.src = user[i].productimg;
 
-        let name = document.createElement("h2");
+        let name = document.createElement("h4");
         name.innerHTML = user[i].productpname;
 
-        let price = document.createElement("h3");
+        let price = document.createElement("h4");
         price.innerHTML = "$" + user[i].productprice;
 
         let buy = document.createElement("button");
