@@ -1,10 +1,14 @@
-/* Global styles */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #F7EFE5;
 }
-
-/* Form styles */
+ 
 #form {
   width: 30%;
   max-width: 600px;  
@@ -14,16 +18,14 @@ body {
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
-/* Label styles */
+ 
 label {
   display: block;
   margin-bottom: 6px;
   font-weight: bold;
   padding-top: 20px;
 }
-
-/* Input styles */
+ 
 input[type="text"],
 input[type="number"],
 input[type="url"] {
@@ -33,20 +35,17 @@ input[type="url"] {
   border-radius: 4px;
   box-sizing: border-box;
 }
-
-/* Select styles */
+ 
 select {
   width: 100%;
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
   box-sizing: border-box;
-  appearance: none; /* Remove default arrow */
 }
-
-/* Button styles */
+ 
 input[type="submit"] {
-  background-color: #4CAF50; /* Green */
+  background: #3B3030;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -56,10 +55,9 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #3B3030;
 }
-
-/* Navbar styles (optional) */
+ 
 .navbar {
   background-color: #3B3030;
   width: 80%;

@@ -14,16 +14,16 @@
 
         <form id="form"> 
                 <label for="img">Profile Pic :</label>
-                <input type="url" id="img" name="img">
+                <input type="url" id="img" name="img" required>
     
                 <label for="name">Name :</label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" required>
     
                 <label for="grid">GRID :</label>
-                <input type="number" id="grid" name="grid"> 
+                <input type="number" id="grid" name="grid" required> 
     
                 <label for="course">Course:</label> 
-                <select id="course">
+                <select id="course" required>
                     <option value="" selected disabled>Select Course</option>
                     <option value="Computer Science">Computer Science</option>
                     <option value="Cyber Security">Cyber Security</option>
@@ -33,13 +33,13 @@
                 </select>
     
                 <label for="fees">Fees:</label> 
-                <select id="fees">
-                    <option selected disabled >Select Fees</option>
-                    <option value="1000">1000</option>
-                    <option value="2000">2000</option>
-                    <option value="3000">3000</option>
-                    <option value="4000">4000</option>
-                    <option value="5000">5000</option>
+                <select id="fees" required>
+                    <option value="" selected disabled >Select Fees</option>
+                    <option value="95,000">95,000</option>
+                    <option value="56,000">56,000</option>
+                    <option value="70,000">70,000</option>
+                    <option value="98,000">98,000</option>
+                    <option value="1,50,000">1,50,000</option>
                 </select>
     
                 <input type="submit" value="Submit" id="submitBtn">

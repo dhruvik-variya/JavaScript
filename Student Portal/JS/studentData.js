@@ -4,33 +4,89 @@ document.getElementById("Navbar").innerHTML = Navbar();
 
 let data = JSON.parse(localStorage.getItem("data")) || [];
 
+// search
+const handleSearch = (e) => {
+    e.preventDefault();
+  
+    let searchInput = document.getElementById("search").value;
+  
+    let comp = data.filter((ele) =>
+      ele.name.toLowerCase().includes(searchInput.toLowerCase())
+    );
+  
+    Uimaker(comp);
+  };
+  
+document.getElementById("searchBtn").addEventListener("click", handleSearch);
+
+
+
+
+
+
 const Uimaker = ((data) => {
 
     document.getElementById("studentList").innerHTML = "";
 
-    data.map((ele) => {
+    data.map((ele,index) => {
+
         let div = document.createElement("div");
         div.className = "studentList";
 
         let img = document.createElement("img");
-        img.src = ele.img || "default-image-url.jpg";  // Added default image
+        img.className="studentIMG"
+        img.src = ele.img || "default-image-url.jpg";  
 
         let name = document.createElement("h3");
-        name.innerHTML = ele.name || "No Name";  // Fallback if name is missing
-
+        name.innerHTML ="Name :  " + ele.name
+        // name.innerHTML = ele.name || "No Name";   
+        
         let grid = document.createElement("h3");
-        grid.innerHTML = ele.grid || "No Grid";  // Fallback if grid is missing
+        grid.innerHTML = "Grid :  " + ele.grid;
+        // grid.innerHTML = ele.grid || "No Grid";  
 
         let course = document.createElement("h3");
-        course.innerHTML = ele.course || "No Course";  // Fallback if course is missing
+        course.innerHTML = "Course :  " + ele.course;
+        // course.innerHTML = ele.course || "No Course";  
 
         let fees = document.createElement("h3");
-        fees.innerHTML = ele.fees || "No Fees";  // Fallback if fees are missing
+        fees.innerHTML = "Fees :  " + ele.fees;
+        // fees.innerHTML = ele.fees || "No Fees";  
 
-        div.append(img, name, grid, course, fees);
+        let deleteBtn = document.createElement("button");
+        deleteBtn.innerHTML = "Delete"; 
+        deleteBtn.className = "deleteBtn";
+        deleteBtn.addEventListener("click", () => {
+            data.splice(index, 1); 
+            localStorage.setItem("data", JSON.stringify(data));
+            Uimaker(data); 
+        });
+        
+
+        div.append(img, name, grid, course, fees,deleteBtn);
         document.getElementById("studentList").append(div);
     });
 
 });
 
+
+// sortby
+const handleSort = (print) => {
+    if (print === "lth") {
+      let comp = data.sort((a, b) => a.fees - b.fees);
+      Uimaker(comp);
+    } 
+    else if (print === "htl") {
+      let comp = data.sort((a, b) => b.fees - a.fees);
+      Uimaker(comp);
+    }
+  };
+
+  document.getElementById("sort").addEventListener("change", (event) => {
+    handleSort(event.target.value);
+  });
+
+
 Uimaker(data);
+
+

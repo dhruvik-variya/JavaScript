@@ -6,6 +6,7 @@ let data = JSON.parse(localStorage.getItem("data")) ||[];
 
 
 const handleUi= (e)=>{
+    
     e.preventDefault();
 
     const student = {
@@ -17,9 +18,10 @@ const handleUi= (e)=>{
     };
     
     data.push(student);
-    localStorage.setItem("student",JSON.stringify(data)); 
+    localStorage.setItem("data",JSON.stringify(data)); 
 
-    // window.location.href = "/PAGES/studentData.html";
+    window.location.href = "/PAGES/studentData.html";
+    window.onload();
     
 };
 
